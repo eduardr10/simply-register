@@ -1,0 +1,30 @@
+id_card                        // CEDULA
+rank_or_hierarchy              // GRADO / JERARQUIA [LISTADO DE POSIBLES OPCIONES]
+last_name                      // APELLIDOS
+first_name                     // NOMBRES
+request_office_number          // Nº DE OFICIO  [FORMATO]
+office_origin                  // LUGAR DE PROCEDENCIA DEL OFICIO [LISTADO DE POSIBLES OPCIONES]
+request_signer                 // FIRMANTE DE LA SOLICITUD
+request_type                   // TIPO DE SOLICITUD [LISTADO DE POSIBLES OPCIONES]
+document_status                // ESTATUS DEL DOCUMENTO [LISTADO DE POSIBLES OPCIONES]
+issued_office_number           // Nº DE OFICIO EMITIDO [FORMATO]
+dgcim_opinion_issued           // OPINION EMITIDA DGCIM [LISTADO DE POSIBLES OPCIONES]
+passport_number                // Nº DE PASAPORTE
+visa_number                    // Nº DE LA VISA
+place_of_birth                 // LUGAR DE NACIMIENTO
+date_of_birth                  // FECHA DE NACIMIENTO
+home_address                   // DIRECCIÓN DE HABITACIÓN
+home_phone                     // TELEFONO DE HABITACION
+mobile_phone                   // TELEFONO MOVIL
+email                          // CORREO ELECTRONICO
+work_unit                      // UNIDAD DONDE LABORA [LISTADO DE POSIBLES OPCIONES]
+position_held                  // CARGO QUE OCUPA [LISTADO DE POSIBLES OPCIONES]
+work_unit_phone_number         // Nº DE TELEFONO DE LA UNIDAD DONDE LABORA
+travel_reason                  // MOTIVO DEL VIAJE
+country_to_visit               // PAIS A VISITAR
+scale                          // ESCALA
+departure_date                 // FECHA DE SALIDA
+return_date                    // FECHA DE REGRESO
+travel_destination_address     // DIRECCIÓN DE LUGAR DURANTE EL VIAJE
+passport_submission            // CONSIGNACION DE PASAPORTE [LISTADO DE POSIBLES OPCIONES]
+observation                    // OBSERVACIÓN

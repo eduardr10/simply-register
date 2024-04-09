@@ -1,0 +1,18 @@
+created:
+    - app/Http/Controllers/PersonalInfoController.php
+    - database/factories/PersonalInfoFactory.php
+    - database/migrations/2024_04_08_231023_create_personal_infos_table.php
+    - app/Models/PersonalInfo.php
+    - database/seeders/PersonalInfoSeeder.php
+    - tests/Feature/Http/Controllers/PersonalInfoControllerTest.php
+    - app/Http/Requests/PersonalInfoStoreRequest.php
+    - app/Http/Requests/PersonalInfoUpdateRequest.php
+    - resources/views/personalInfo/index.blade.php
+    - resources/views/personalInfo/create.blade.php
+    - resources/views/personalInfo/show.blade.php
+    - resources/views/personalInfo/edit.blade.php
+updated:
+    - routes/web.php
+models:
+    User: { name: string, email: string, email_verified_at: 'datetime nullable', password: string, remember_token: 'string nullable' }
+    PersonalInfo: { id_card: 'string:15 unique', rank: 'enum:S1,S2,SM3,SM2,SM1,SA,SS,TTE,TC,PTTE,TF,CAP,TN MY,CC,TCNEL,CF,CNEL,CN,GB,CA,GD,VA,MG,A,GJ,AJ', last_name: 'string:60', first_name: 'string:60', request_office_number: 'string:15', office_origin: 'string:150', request_signer: 'string:60', request_type: 'string:150', document_status: 'enum:OFICIO_RECIBIDO,PROCESANDO,PARA_LA_FIRMA,EN_DESPACHO,ENTREGADO', issued_office_number: 'string:15', dgcim_opinion_issued: 'enum:FAVORABLE,NO_FAVORABLE', passport_number: 'string:15', visa_number: 'string:15', place_of_birth: 'string:200', date_of_birth: date, home_address: text, home_phone: 'string:15', mobile_phone: 'string:15', email: 'string:60 unique', work_unit: 'string:150', position_held: 'string:150', work_unit_phone_number: 'string:15', travel_reason: 'string:200', country_to_visit: 'string:60', scale: 'string:60', departure_date: date, return_date: date, travel_destination_address: text, passport_submission: 'enum:SI,NO', observation: 'text nullable' }

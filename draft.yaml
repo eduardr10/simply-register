@@ -1,0 +1,38 @@
+models:
+  PersonalInfo:
+    id_card: string:15 unique
+    rank: enum:S1,S2,SM3,SM2,SM1,SA,SS,TTE,TC,PTTE,TF,CAP,TNMY,CC,TCNEL,CF,CNEL,CN,GB,CA,GD,VA,MG,A,GJ,AJ
+    last_name: string:60
+    first_name: string:60
+    request_office_number: string:15
+    office_origin: string:150
+    request_signer: string:60
+    request_type: string:150
+    document_status: enum:OFICIO_RECIBIDO,PROCESANDO,PARA_LA_FIRMA,EN_DESPACHO,ENTREGADO
+    issued_office_number: string:15
+    dgcim_opinion_issued: enum:FAVORABLE,NO_FAVORABLE
+    passport_number: string:15
+    visa_number: string:15
+    place_of_birth: string:200
+    date_of_birth: date
+    home_address: text
+    home_phone: string:15
+    mobile_phone: string:15
+    email: string:60 unique
+    work_unit: string:150
+    position_held: string:150
+    work_unit_phone_number: string:15
+    travel_reason: string:200
+    country_to_visit: string:60
+    scale: string:60
+    departure_date: date
+    return_date: date
+    travel_destination_address: text 
+    passport_submission: enum:SI,NO
+    observation: text nullable
+
+controllers:
+  PersonalInfo:
+    resource
+
+seeders: PersonalInfo
