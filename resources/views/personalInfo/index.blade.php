@@ -71,7 +71,7 @@
                 <td title="{{$info->passport_number}}">{!! Str::limit($info->passport_number, 25) !!}</td>
                 <td title="{{$info->visa_number}}">{!! Str::limit($info->visa_number, 25) !!}</td>
                 <td title="{{$info->place_of_birth}}">{!! Str::limit($info->place_of_birth, 25) !!}</td>
-                <td title="{{$info->date_of_birth}}">{!! Str::limit($info->date_of_birth, 25) !!}</td>
+                <td title="{{$info->date_of_birth}}" style="text-align:center">{!! Str::limit($info->date_of_birth->format('d-m-Y'), 25) !!}</td>
                 <td title="{{$info->home_address}}">{!! Str::limit($info->home_address, 25) !!}</td>
                 <td title="{{$info->home_phone}}">{!! Str::limit($info->home_phone, 25) !!}</td>
                 <td title="{{$info->mobile_phone}}">{!! Str::limit($info->mobile_phone, 25) !!}</td>
@@ -82,8 +82,8 @@
                 <td title="{{$info->travel_reason}}">{!! Str::limit($info->travel_reason, 25) !!}</td>
                 <td title="{{$info->country_to_visit}}">{!! Str::limit($info->country_to_visit, 25) !!}</td>
                 <td title="{{$info->scale}}">{!! Str::limit($info->scale, 25) !!}</td>
-                <td title="{{$info->departure_date}}">{!! Str::limit($info->departure_date, 25) !!}</td>
-                <td title="{{$info->return_date}}">{!! Str::limit($info->return_date, 25) !!}</td>
+                <td title="{{$info->departure_date}}" style="text-align:center">{!! Str::limit($info->departure_date->format('d-m-Y'), 25) !!}</td>
+                <td title="{{$info->return_date}}" style="text-align:center">{!! Str::limit($info->return_date->format('d-m-Y'), 25) !!}</td>
                 <td title="{{$info->travel_destination_address}}">{!! Str::limit($info->travel_destination_address, 25) !!}</td>
                 <td title="{{$info->passport_submission}}">{!! Str::limit($info->passport_submission, 25) !!}</td>
                 <td title="{{$info->observation}}">{!! Str::limit($info->observation, 25) !!}</td>
