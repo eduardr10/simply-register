@@ -7,6 +7,9 @@
     <div class="col-auto">
         <form class="form-inline" action="{{ route('personal-info.index') }}" method="GET">
             <div class="input-group">
+                <div class="input-group-prepend mx-5">
+                    <button type="button" class="btn btn-success" onclick="exportWithSearch();">Exportar</button>
+                </div>
                 <input type="text" class="form-control" id="search" name="search" value="{{ request()->input('search') }}" placeholder="Buscar">
                 <div class="input-group-append">
                     <button type="submit" class="btn btn-primary">Buscar</button>

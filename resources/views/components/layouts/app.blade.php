@@ -58,9 +58,6 @@
             <button class="btn btn-primary">Añadir</button>
         </a>
         @endif
-
-        <!-- <a href="{{ route('personal-info.index') }}" class="btn btn-info">Inicio</a></li>
-        <a href="{{ route('personal-info.create') }}" class="btn btn-info">Añadir</a></li> -->
     </header>
     <div class="container-fluid mt-5 px-5">
         <h1 class="text-center mb-4">Información Personal</h1>
@@ -80,6 +77,13 @@
     </div>
 
     <script src="{{ asset('js/bootstrap.bundle.min.js') }}"></script>
+    <script>
+    function exportWithSearch() {
+        const searchValue = document.querySelector('#search').value;
+        const url = "{{ route('export-to-excel') }}?search=" + searchValue;
+        window.location.href = url;
+    }
+</script>
 </body>
 
 </html>
